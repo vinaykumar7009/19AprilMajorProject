@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Testimonials.css'
 import { testimonialsData } from '../../data/testimonialsData';
-import leftArrow from'../../assets/leftArrow.png'
+import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
 const Testimonials = () => {
 
@@ -29,7 +29,27 @@ const Testimonials = () => {
                 <div></div>
                 <img src={testimonialsData[selected].image} alt="" />
                 <div className="arrows">
-                    <img src={leftArrow} alt="" /><img src={rightArrow} alt="" />
+                    <img
+
+                        onClick={() => {
+                            selected === 0
+                                ? setselected(tLength - 1)
+                                : setselected((prev) => prev - 1)
+                        }}
+
+                        src={leftArrow} alt="" />
+                    <img
+
+                        onClick={() => {
+
+                            selected === tLength - 1
+                                ? setselected(0)
+                                : setselected((prev) => prev + 1);
+
+                        }}
+
+
+                        src={rightArrow} alt="" />
                 </div>
             </div>
         </div>
