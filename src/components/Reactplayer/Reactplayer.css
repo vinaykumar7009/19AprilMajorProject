@@ -1,0 +1,10 @@
+
+#reactplayer {
+    display: flex;
+    /* background-color: bisque; */
+}
+#reactplayer div{
+    /* background-color: green; */
+    align-items: center;
+    margin: 20px;
+}

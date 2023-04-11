@@ -74,7 +74,11 @@ const Hero = () => {
 
 
           </button>
-          <button className="btn">Learn more</button>
+          <button className="btn">
+            <Link to='VideoHeading'
+             span={true}
+             smooth={true}> Learn more</Link>
+             </button>
         </div>
       </div>
       <div className="right-h" id='contact'>
