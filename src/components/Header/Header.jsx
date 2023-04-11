@@ -51,7 +51,7 @@ const Header = () => {
               span={true}
               smooth={true}
 
-            >why us</Link>
+            >Why us</Link>
           </li>
           <li>
             <Link
@@ -60,7 +60,7 @@ const Header = () => {
               span={true}
               smooth={true}
             >
-              plans
+              Plans
             </Link>
           </li>
           <li ><Link
