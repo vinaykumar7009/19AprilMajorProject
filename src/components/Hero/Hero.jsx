@@ -5,12 +5,13 @@ import hero_images from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
+import { Link } from 'react-scroll';
 
 import { motion } from 'framer-motion';
 const Hero = () => {
 
   const transition = { type: 'spring', duration: 3 }
-  const mobile = window.innerWidth<=768 ? true: false;
+  const mobile = window.innerWidth <= 768 ? true : false;
 
   return (
     <div className="hero" id='home'>
@@ -22,14 +23,14 @@ const Hero = () => {
         <div className="the-best-ad">
           <motion.div
 
-            initial={{ left: mobile?"178px":"238px" }}
+            initial={{ left: mobile ? "178px" : "238px" }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}
 
 
 
           ></motion.div>
-          <span>The best fitness club in the town</span>
+          <span>The best fitness club in the Chandigarh</span>
         </div>
 
         {/*Hero Heading*/}
@@ -51,26 +52,36 @@ const Hero = () => {
         {/*figures*/}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>+250</span>
             <span>expert coaches</span>
           </div>
           <div>
-            <span>+978 </span>
+            <span>+3965</span>
             <span>members joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <span>+80</span>
             <span>fitness program</span>
           </div>
         </div>
         {/*hero buttons*/}
         <div className="hero-buttons">
-          <button className="btn">Get Started</button>
+          <button className="btn">
+
+            <Link to='join-us'
+              span={true}
+              smooth={true}>Get Started</Link>
+
+
+          </button>
           <button className="btn">Learn more</button>
         </div>
       </div>
-      <div className="right-h">
-        <button className='btn'>Join Now</button>
+      <div className="right-h" id='contact'>
+        <button className='btn'><Link to='join-us'
+          span={true}
+          smooth={true}
+        >JOIN</Link></button>
 
 
         <motion.div

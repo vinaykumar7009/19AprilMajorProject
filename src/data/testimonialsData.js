@@ -6,20 +6,20 @@ export const testimonialsData = [
   {
     image: image1,
     review:
-      "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
-    name: 'MATHEW HENDRICKSON',
-    status : 'ENTREPRENEUR'
+      "FRIENDLY STAFF AND LOTS OF VARIED EQUIPMENT TO WORK OUT ON. I HAVE BEEN COMING TO THIS GYM FOR 5 YRS!",
+    name: 'VINAY KUMAR',
+    status : 'STUDENT'
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
-    name: 'JOHN KEVIN',
+    review: 'IT HAS EVERYTHING I NEED FOR A WORKOUT AND IT IS CLOSE TO MY HOME ',
+    name: 'AJAY',
     status: 'COACH'
   },
   {
     image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
-    name: 'FRANKLIN',
+    review:' JENNA WAS REALLY GREAT AS A TRAINER. VERY UPBEAT. NOT OVERCROWDED AND GOOD MACHINES.',
+    name: 'SANJAY',
     status: "CUSTOMER"
   }
 ];

@@ -26,7 +26,7 @@ const Reasons = () => {
                 <div className='details-r'>
 
                     <div><img src={tick} alt="" />
-                        <span>OVER 140+ EXPERT COACHS</span>
+                        <span>OVER 250+ EXPERT COACHS</span>
                     </div>
                     <div><img src={tick} alt="" />
                         <span>TRAIN SMARTER AND FASTER THAN BEFORE</span>

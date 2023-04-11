@@ -2,6 +2,7 @@ import React from 'react'
 import './Programs.css'
 import { programsData } from '../../data/programsData'
 import RightArrow from '../../assets/rightArrow.png'
+import { Link } from 'react-scroll';
 const Programs = () => {
     return (
         <div className="programs" id="programs">
@@ -15,10 +16,15 @@ const Programs = () => {
                 {programsData.map((program) => (
 
                     < div className="category">
-                       {program.image}
-                       <span>{program.heading}</span>
-                       <span>{program.details}</span>
-                       <div className="join-now"><span>Join Now</span><img src={RightArrow} alt="" /></div>
+                        {program.image}
+                        <span>{program.heading}</span>
+                        <span>{program.details}</span>
+                        <div className="join-now"><span>
+                            <Link to='join-us'
+                                span={true}
+                                smooth={true}
+                            >Join Now</Link>
+                        </span><img src={RightArrow} alt="" /></div>
                     </div>
                 ))}
             </div>

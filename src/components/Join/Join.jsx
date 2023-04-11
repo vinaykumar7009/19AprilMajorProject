@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Join.css';
 import emailjs from '@emailjs/browser'
-const join = () => {
+const Join = () => {
     const form = useRef()
     const sendEmail = (e) => {
         e.preventDefault();
@@ -42,4 +42,4 @@ const join = () => {
     )
 }
 
-export default join
+export default Join

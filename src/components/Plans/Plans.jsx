@@ -2,6 +2,7 @@ import React from 'react'
 import './Plans.css'
 import { plansData } from '../../data/plansData'
 import whiteTick from '../../assets/whiteTick.png'
+import { Link } from 'react-scroll';
 const Plans = () => {
     return (
         <div className="plans-container" id='plans'>
@@ -21,7 +22,7 @@ const Plans = () => {
                     <div className="plan" key={i}>
                         {plan.icon}
                         <span>{plan.name}</span>
-                        <span>$ {plan.price}</span>
+                        <span><span>&#8377;</span>{plan.price}</span>
 
                         <div className="features">
                             {plan.features.map((feature, i) => (
@@ -34,7 +35,10 @@ const Plans = () => {
                         <div>
                             <span>See more benefits-> </span>
                         </div>
-                        <button className="btn">Join now</button>
+                        <button className="btn">
+                            <Link to='join-us'
+                                span={true}
+                                smooth={true}>Join now</Link></button>
                     </div>
                 ))}
 
