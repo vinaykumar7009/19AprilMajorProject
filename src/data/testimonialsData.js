@@ -14,7 +14,7 @@ export const testimonialsData = [
     image: image2,
     review: 'IT HAS EVERYTHING I NEED FOR A WORKOUT AND IT IS CLOSE TO MY HOME ',
     name: 'AJAY',
-    status: 'COACH'
+    status: 'STUDENT'
   },
   {
     image : image3,
